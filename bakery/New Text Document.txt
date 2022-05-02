@@ -1,0 +1,15 @@
+Create Table CAKE (
+	“CakeID”		INTEGER NOT NULL,
+	“Flavor” 		VARCHAR(128),
+	“Description”		VARCHAR(128),
+	“NumberOfLayers”	INTEGER,
+	“Design”		VARCHAR(128),
+	“Allergens”		VARCHAR(128),
+	“Price”			INTEGER,
+	“Inventory”		INTEGER,
+	PRIMARY KEY(“CakeID”)
+);
+
+INSERT INTO `cake` (`“CakeID”`, `“Image”`, `“Flavor”`, `“Description”`, `“NumberOfLayers”`, `“Design”`, `“Allergens”`, `“Price”`, `“Inventory”`) VALUES ('101', '101.jpg', 'Red VelVet', 'The recipe that started our bakery ', '1', 'Cream Cheese Frosting', 'Dairy', '19.99', '61'), ('102', '102.jpg', 'Devil\'s Food Cake', 'devilious and delicious ', '2', NULL, NULL, '19.99', '27'), ('103', '103.jpg', 'Wedding Cake', 'white chocolate and rasberry', '3', 'White chocolate chips', 'Peanuts', '59.99', '9'), ('104', '104.jpg', 'Marble', 'a swirl of chocolate and vanilla cake ', '1', '', 'Wheat', '10.5', '30'), ('105', '105.jpg', 'Chocolate', 'chocolate cake, just like mom made', '2', 'Chocolate ganache drops', '', '10.5', '30'), ('106', '106.jpg', 'Black Forest', 'dark and delicious ', '1', 'Chocolate curls', '', '30.1', '29');
+INSERT INTO `cookie` (`“CookieID”`, `“Image”`, `“Flavor”`, `“Description”`, `“Texture”`, `“Allergens”`, `“Price”`, `“Inventory”`) VALUES ('300', 'pictures/300.jpg', 'Chocolate Chip', 'Our world-famous classic chocolate chunk', 'Soft', 'Peanuts', '2', '300'), ('301', 'pictures/301.jpg', 'Macadamian Crunch', 'macadamia nuts, white chocolate, and hazelnuts', 'Crunchy', 'Nuts', '4.99', '39'), ('302', 'pictures/302.jpg', 'S\'mores', 'a campfire classic', 'Soft', '', '5.7', '142'), ('303', 'pictures/303.jpg', 'Sugar Cookie', 'Our award-winning recipe', 'Soft', '', '3.2', '97'), ('304', 'pictures/304.jpg', 'Oatmeal Chocolate-Chip', 'because who likes raisins', 'Crispy', '', '4.5', '184'), ('305', 'pictures/305.jpg', 'French Toast', 'cinnamon cookie with maple forsting', 'Soft', '', '2.5', '43'), ('306', 'pictures/306.jpg', 'Gingerbread', 'grandma\'s gingerbread recipe', 'Soft', '', '10.5', '108');
+INSERT INTO `bread` (`“BreadID”`, `“Image”`, `“Flavor”`, `“Description”`, `“Buttered”`, `“Allergens”`, `“Price”`, `“Inventory”`, `“Bakery_ID”`) VALUES ('500', 'pictures/500.jpg', 'Sourdough', 'sour, crunchy , and word-famous, San-Francisco sourdough', 'Yes', NULL, '5.99', '103', '30923'), ('501', 'pictures/501.jpg', 'Whole Wheat', 'brown bread baked with crushed oats', 'No', 'Oatmeal', '4.89', '20', '30922'), ('502', 'pictures/502.jpg', 'Cinnamon Toast Crunch ', 'inspire by a childhood fav, cinnamon and ginger swirled', 'No', 'Peanuts', '10.5', '47', '30924'), ('503', 'pictures/503.jpg', 'White Bread', 'Loaf of classic white bread', 'Yes', '', '9.5', '120', '30925');
